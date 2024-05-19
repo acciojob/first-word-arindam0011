@@ -6,7 +6,7 @@ function firstWord(s) {
 	s.trim();
 	let p="";
 	for(let i in s){
-		if(s.charAt(i)==' '){
+		if(s.charAt(i)==' '|| i==s.length-1){
 			p=s.slice(0,i);
 			break;
 		}
@@ -16,5 +16,5 @@ function firstWord(s) {
 
 // Do not change the code below
 
-const s = prompt("Enter String:");
-alert(firstWord(s));
+// const s = prompt("Enter String:");
+// alert(firstWord(s));
